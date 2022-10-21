@@ -4,7 +4,7 @@ import { getFirestore } from "firebase/firestore";
 
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyAUEcahbJU4Gpwbu-HwvFs-u2oRe9tyq1g",
+  apiKey: "process.env.API_KEY_SECRET",
   authDomain: "netflix-95603.firebaseapp.com",
   projectId: "netflix-95603",
   storageBucket: "netflix-95603.appspot.com",
