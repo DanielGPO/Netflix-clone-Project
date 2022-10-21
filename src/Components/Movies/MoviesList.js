@@ -4,23 +4,23 @@ import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 import DisplayMovie from './displayMovie'
 
 
-export default function MoviesList(props, RowId) {
+export default function MoviesList(props) {
 
 
 
     const slideRight =() =>{
-        let slider = document.getElementById('slider' + RowId)
+        let slider = document.getElementById('slider')
         slider.scrollLeft = slider.scrollLeft + 500;
     }
     const slideLeft =() =>{
-        let slider = document.getElementById('slider' + RowId)
+        let slider = document.getElementById('slider')
         slider.scrollLeft = slider.scrollLeft - 500;
     }
   return (
     <>
     
     <div className='group'>
-        <ul  id={'slider' + RowId} className='flex-row flex relative w-full overflow-x-scroll scroll-smooth scrollbar-hide 
+        <ul  id={'slider'} className='flex-row flex relative w-full overflow-x-scroll scroll-smooth scrollbar-hide 
         whitespace-nowrap'>
         <MdChevronLeft onClick={slideLeft} className='bg-white rounded-full left-0 absolute opacity-50 hover:opacity-100 cursor-pointer z-10 hidden mt-5 group-hover:block mb-24 bottom-0' size={40}/>
            
