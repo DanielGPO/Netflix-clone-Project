@@ -86,9 +86,9 @@ export default function MoviePlace(){
     return (
         <main>
             <p className="text-white text-3xl">Most watched</p>
-            <MoviesList RowId='1' items ={MOVIES} />
+            <MoviesList items ={MOVIES} />
             <p className="text-white text-3xl">For you</p>
-            <MoviesList RowId='2' items ={RECOMENDADOS} />
+            <MoviesList items ={RECOMENDADOS} />
             
         </main>
     )
